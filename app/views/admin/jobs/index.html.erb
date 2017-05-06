@@ -2,7 +2,7 @@
   <div class="job">
     <%= link_to("New Job", new_admin_job_path, class: "btn btn-primary pull-right") %>
   </div>
-  <table class="table table-hover">
+  <table class="table table-boldered table-striped custab" >
     <thead>
        <tr>
           <td></td>
@@ -22,13 +22,13 @@
           <td><%= job.description %></td>
           <td><%= job.created_at %></td>
           <td>
-             <%= link_to("Edit", edit_admin_job_path(job), class: "btn btn-sm btn-default")%>
-             <%= link_to("Delete", admin_job_path(job),    class: "btn btn-sm btn-default",
+             <%= link_to("Edit", edit_admin_job_path(job), class: "btn btn-xs btn-info")%>
+             <%= link_to("Delete", admin_job_path(job),    class: "btn btn-xs btn-danger",
                   method: :delete, data: { confirm: "Are you sure?" } )%>
              <% if job.is_hidden %>
-                <%= link_to("Publish", publish_admin_job_path(job), :method => :post, :class => "btn btn-xs btn-default") %>
+                <%= link_to("Publish", publish_admin_job_path(job), :method => :post, :class => "btn btn-xs btn-success") %>
              <% else %>
-                <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-default") %>
+                <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning") %>
             <% end %>
           </td>
       </tr>

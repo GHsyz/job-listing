@@ -1,5 +1,73 @@
-<h1> Hello World! </h1>
-<div class="job">
- <%= link_to("马上应征", jobs_path, class: "btn btn-primary pull-right") %>
-</div>
- 
+<div class="col-md-12">
+      <div class="row box">
+        <div class="All-jobs">
+          <a href="http://localhost:3000/jobs">All jobs? Click here</a>
+        </div>
+        <div class="image-box">
+        <div class="col-md-6 text-center title">
+          <h1><font style="color:#37b0a3;font-size:300%;"> 3S </font></h1>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2 box-inner">
+           <div class="col-sm-4 col-md-3 style="display:inline-block" custom_input"><input type="text" class="form-control" id="job_title" name="job-title" placeholder="Job Title" minlength="2"></div>
+           <div class="col-sm-4 col-md-3 style="display:inline-block" custom_input"><input type="text" class="form-control" id="job_category" name="category" placeholder="Industry. ." minlength="2"></div>
+               <div class="col-sm-4 col-md-3 style="display:inline-block" custom_input">
+                 <input type="text" id="job_location" class="form-control" name="location" placeholder="Location*" required="required">
+              </div>
+                 <div style="display:inline" class="custome_input-btn">
+                 <button class="btn btn-default" type="submit">
+                   <i class="fa fa-search"></i>
+                 </button>
+                  </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+     <div class="content-section-a">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-5 col-sm-6">
+             <hr class="section-heading-spacer">
+             <div class="clearfix"></div>
+             <h2 class="section-heading">Simple</h2>
+             <p class="lead">3S is simple for you to use</p>
+           </div>
+           <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+             <%= image_tag 'dreamjob.jpg', class: 'img-responsive' %>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="content-section-b">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+             <hr class="section-heading-spacer">
+             <div class="clearfix"></div>
+             <h2 class="section-heading">Search</h2>
+             <p class="lead">All kinds of jobs are avalible here, <br>you need just a simple ‘search’</p>
+           </div>
+           <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+             <%= image_tag '3.jpg', class: 'img-responsive' %>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="content-section-a">
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-5 col-sm-6">
+             <hr class="section-heading-spacer">
+             <div class="clearfix"></div>
+             <h2 class="section-heading">Save</h2>
+             <p class="lead">Finding jobs is wasting time,<br>dont't worry, 3S help you save it</p>
+           </div>
+           <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+             <%= image_tag 'save.png', class: 'img-responsive' %>
+           </div>
+         </div>
+       </div>
+     </div>
